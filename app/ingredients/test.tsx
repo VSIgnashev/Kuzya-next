@@ -1,10 +1,19 @@
-import { Button } from "@mui/material";
-import getIngredients from "../api/getIngredients";
+"use client";
 
-const Test: React.FC<any> = (asd: any) => {
+import { a1 } from "./page";
+
+type Props = {
+  fun?: () => void;
+};
+
+const Test: React.FC<Props> = () => {
   return (
     <div className="mt-10">
-      <Button onClick={() => getIngredients()}>asd</Button>
+      currentCount: {a1}
+      <div className="flex">
+        <div className="">+</div>
+        <div className="">-</div>
+      </div>
     </div>
   );
 };

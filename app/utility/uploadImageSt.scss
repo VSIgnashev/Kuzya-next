@@ -1,0 +1,159 @@
+.upload-icon-visible {
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  min-width: 40px;
+  min-height: 40px;
+  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 3;
+}
+
+.upload-icon-visible:hover ~ .no-preview {
+  cursor: pointer;
+  background-color: #818181;
+}
+
+.upload-icon-invisible {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  opacity: 0;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.upload-done-icon-visible {
+  position: absolute;
+  background-color: #d6d3d1;
+  border-radius: 4px;
+  left: 8px;
+  top: 12px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  z-index: 3;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.2s ease 0.2s;
+}
+
+// .second-icon-visible:hover {
+//   cursor: pointer;
+//   -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+//   -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+//   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+//   background-color: #a8a29e;
+//   transition: 0.2s;
+// }
+
+.upload-done-icon-invisible {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 40px;
+  min-height: 40px;
+  opacity: 0;
+  -webkit-transform: rotate(225deg);
+  transform: translate(-50%, -50%) rotate(225deg);
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.no-preview {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  height: 150px;
+  background: #707070;
+  transition: all 0.5s;
+}
+
+.preview {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  height: 150px;
+  opacity: 20;
+  transition: all 0.5s;
+}
+
+// .upload-done-icon-visible.image-chosen:hover {
+//   -webkit-transform: rotate(225deg);
+//   background-color: transparent;
+//   transform: rotate(225deg);
+//   opacity: 0;
+//   transition: background-color 0s, transform 0.2s, opacity 0.2s;
+// }
+
+.remove-icon {
+  position: absolute;
+  z-index: 4;
+  left: 8px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.remove-icon:hover {
+  position: absolute;
+  z-index: 4;
+  opacity: 100;
+  left: 8px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  transform: rotate(180deg);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reset-button {
+  position: absolute;
+  z-index: 3;
+  height: 24px;
+  width: 24px;
+  background-color: #d6d3d1;
+
+  border-radius: 4px;
+  left: 8px;
+  top: 12px;
+}
+
+.reset-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.reset-button:hover .done-icon {
+  opacity: 0;
+  transform: rotate(225deg);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.done-icon {
+  position: absolute;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reset-icon {
+  position: absolute;
+
+  opacity: 0;
+
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reset-button:hover .reset-icon {
+  opacity: 100;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(180deg);
+}

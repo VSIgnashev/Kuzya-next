@@ -6,11 +6,15 @@ import Test from "./test";
 import getIngredients from "../api/getIngredients";
 import IngredientCard from "../components/IngredientCard";
 import IngredientsList from "./IngredientsList";
+import CreateIngredient from "../components/CreateIngredient";
 // import useAppSelector from "../../hooks/useAppSelector";
 // import CreateIngredient from "../../components/CreateIngredient";
 
 // // import { resetError, resetSuccessMessage } from "../../store/snackbarSlice";
 // import IngredientsList from "./IngredientsList";
+
+import type { RootState } from "../store/store";
+import { useSelector, useDispatch } from "react-redux";
 
 const Ingredients = async () => {
   //   const dispatch = useAppDispatch();
@@ -70,15 +74,16 @@ const Ingredients = async () => {
       </Snackbar> */}
       <div className="fixed bottom-10 mt-24 right-[50px] z-10">
         <div className=""></div>
-        {/* <CreateIngredient>
+        <CreateIngredient>
           <Fab color="primary">
             <AddIcon></AddIcon>
           </Fab>
-        </CreateIngredient> */}
+        </CreateIngredient>
       </div>
       <div className="flex flex-wrap justify-evenly gap-x-4 gap-y-10 mt-[50px] items-center max-w-[976px]">
         <IngredientsList />
       </div>
+      {/* <Test /> */}
     </div>
   );
 };
