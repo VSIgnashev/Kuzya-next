@@ -6,7 +6,7 @@ import { MealsList } from "./MealsList";
 
 function Meals() {
   return (
-    <div>
+    <div className="mx-auto mt-[50px]">
       <div className="fixed bottom-10 right-[50px] z-10">
         <Link href="meals/createMeal">
           <Fab color="primary">

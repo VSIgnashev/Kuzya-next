@@ -41,8 +41,8 @@ const MealCard: React.FC<MealCardProps> = ({
   //href={{ pathname: "/recipes/[slug]", query: { slug: recipeId } }}
   return (
     <Link href={`/recipes/${recipeId}`}>
-      <CardActionArea sx={{ maxWidth: 320, height: 502 }}>
-        <Card sx={{ maxWidth: 320, height: 502 }}>
+      <CardActionArea sx={{ maxWidth: 320 }}>
+        <Card sx={{ maxWidth: 320, height: 413 }}>
           <CardMedia
             component="img"
             sx={{ aspectRatio: "16/9" }}
