@@ -1,4 +1,4 @@
-import Ingredient from "../ingredients/IngredientType";
+import Ingredient from "../mealsCatalogue/IngredientType";
 import configuration from "./apiConfig";
 
 const fetchIngredients = async () => {
@@ -16,7 +16,8 @@ const getIngredients = async (): Promise<Ingredient[]> => {
     .then((res) => res.json())
     .then((res) => {
       return res;
-    });
+    })
+    .catch((error) => console.log(error));
   return ingredients;
 };
 

@@ -2,8 +2,8 @@ import { Alert, Fab, Snackbar } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 // import useAppDispatch from "../../hooks/useAppDispatch";
 import React, { useEffect, useState } from "react";
-import Test from "./test";
-import getIngredients from "../api/getIngredients";
+
+import getIngredients from "../data/getIngredients";
 import IngredientCard from "../components/IngredientCard";
 import IngredientsList from "./IngredientsList";
 import CreateIngredient from "../components/CreateIngredient";
