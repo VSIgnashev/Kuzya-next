@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "../api/axios";
+import axios from "../data/axios";
 
 const GET_INGREDIENTS_URL = "/ingredients";
 const CREATE_INGREDIENT_URL = "/ingredients";

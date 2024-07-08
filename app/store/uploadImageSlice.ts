@@ -1,5 +1,5 @@
 import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "../api/axios";
+import axios from "../data/axios";
 import { RootState } from "./store";
 
 const UPLOAD_IMAGE_URL = "/files";

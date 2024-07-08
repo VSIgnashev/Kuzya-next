@@ -1,4 +1,4 @@
-type Nutrients = {
+export type Nutrients = {
   calories: number;
   carbohydrates: number;
   fats: number;
