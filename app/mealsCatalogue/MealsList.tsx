@@ -1,5 +1,5 @@
 import MealCard from "../components/MealCard";
-import getMeals from "../data/Meals";
+import getMeals from "../data/meals";
 
 export const MealsList: React.FC = async () => {
   // const dispatch = useAppDispatch();
