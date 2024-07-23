@@ -1,4 +1,4 @@
-import { getMealById } from "@/app/data/meals";
+import { getMealById } from "@/app/data/Meals";
 import Meal from "@/app/recipes/MealType";
 import { Typography } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";

@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@mui/material";
-import { getMealById } from "./data/meals";
 import { getMealListById } from "./data/mealLists";
 
 export default function Home() {
