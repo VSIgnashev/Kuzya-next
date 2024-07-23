@@ -47,8 +47,8 @@ const MobileMenu: React.FC = () => {
           </Button>
         </MenuItem>
         <MenuItem>
-          <Button color="inherit" href="/meals">
-            Meals
+          <Button color="inherit" href="/recipes">
+            Recipes
           </Button>
         </MenuItem>
         <MenuItem>
