@@ -1,5 +1,5 @@
 import { getMealById } from "@/app/data/meals";
-import Meal from "@/app/mealsCatalogue/MealType";
+import Meal from "@/app/recipes/MealType";
 import { Typography } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import plateIcon from "./../../../public/icons/plate_icon.svg";

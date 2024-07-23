@@ -1,4 +1,4 @@
-import Meal from "../mealsCatalogue/MealType";
+import Meal from "../recipes/MealType";
 import configuration from "./apiConfig";
 
 const getMeals = async (): Promise<Meal[]> => {
