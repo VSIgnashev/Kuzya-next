@@ -115,12 +115,8 @@ function Header() {
             <Button sx={{ my: 2, mx: 2 }} color="inherit" href="/">
               Meal lists
             </Button>
-            <Button
-              sx={{ my: 2, mx: 2 }}
-              color="inherit"
-              href="/mealsCatalogue"
-            >
-              Meals
+            <Button sx={{ my: 2, mx: 2 }} color="inherit" href="/recipes">
+              Recipes
             </Button>
             <Button sx={{ my: 2, mx: 2 }} color="inherit" href="/ingredients">
               Ingredients
