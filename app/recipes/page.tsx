@@ -8,7 +8,7 @@ function Meals() {
   return (
     <div className="mx-auto mt-[50px]">
       <div className="fixed bottom-10 right-[50px] z-10">
-        <Link href="meals/createMeal">
+        <Link href="recipes/createMeal">
           <Fab color="primary">
             <AddIcon></AddIcon>
           </Fab>
